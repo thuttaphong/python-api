@@ -105,5 +105,5 @@ class ServiceHandler(BaseHTTPRequestHandler):
 			self.send_response(404)
 			
 #Server Initialization
-server = HTTPServer(('0.0.0.0',1000), ServiceHandler)
+server = HTTPServer(('127.0.0.1',9999), ServiceHandler)
 server.serve_forever()
